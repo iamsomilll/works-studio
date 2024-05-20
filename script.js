@@ -11,7 +11,7 @@ function loading() {
     {
       top: "100%",
       delay: 0.8,
-      duration: 0.3,
+      duration: 0.5,
       ease: "expo.out",
     },
     "anim"
@@ -40,6 +40,10 @@ const scroll = new LocomotiveScroll({
 document.querySelector(".footer .pt1 h4").addEventListener("click", ()=>{
   scroll.scrollTo(0);
 })
+
+// document.querySelector("#page1 .bottom img").addEventListener("click", ()=>{
+//   scroll.scrollTo(2);
+// })
 
 var elem = document.querySelectorAll(".elem")
 var page2 = document.querySelector("#page2")

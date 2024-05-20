@@ -26,7 +26,7 @@ body {
   align-items: center;
   text-align: center;
   z-index: 99;
-  display: none;
+  /* display: none; */
 }
 
 #yellow1 {
@@ -98,12 +98,14 @@ body {
   font-family: helvetica;
   font-weight: 500;
   font-size: 1.2vw;
+  cursor: pointer;
 }
 
 .svg-icon {
   filter: invert(100%);
   width: 19px;
   height: 19px;
+  cursor: pointer;
 }
 
 #nav svg path {
@@ -133,10 +135,15 @@ body {
   padding: 0px 60px;
 }
 
+.bottom img{
+  cursor: pointer;
+}
+
 .bottom a {
   font-family: helvetica;
   font-weight: 500;
   font-size: 1.2vw;
+  cursor: pointer;
 }
 
 #page1 .bottom a{
@@ -253,18 +260,37 @@ body {
   color: #000000;
 }
 
-.elem .blur {
+.elem .blur-right {
   position: absolute;
-  width: 40%;
-  /* background-color: red; */
-  background: linear-gradient(to right, #f5e31bf0, #f5e41b, #f5e31bf6);
-  box-shadow: 0px 0px 10px 10px #f5e41b, -10px 0px 10px 1px #f5e41b;
-  height: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 8%;
+  left: 70%;
   top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #f5e41b, transparent);
+  height: 100%;
   z-index: 8;
 }
+.elem .blur-left {
+  position: absolute;
+  width: 8%;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, transparent, #f5e41b);
+  height: 100%;
+  z-index: 8;
+}
+.elem .blur-center {
+  position: absolute;
+  width: 32%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #f5e41b;
+  height: 100%;
+  z-index: 8;
+}
+
 
 #page3 {
   min-height: 100vh;
@@ -272,7 +298,7 @@ body {
   background: #fff;
 }
 .image-container {
-  padding: 30px;
+  padding: 15px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -281,7 +307,7 @@ body {
   width: auto;
   /* background-color: red; */
   position: relative;
-  margin: 20px;
+  margin: 12px;
   overflow: hidden;
 }
 .image-div img {
@@ -302,20 +328,21 @@ body {
   z-index: 2;
   transition: all ease 0.5s;
 }
-.overlay p {
+.overlay h2 {
   font-size: 3.5vw;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   line-height: 2.8vw;
   opacity: 0;
+  font-weight: 300;
   transition: all ease 0.5s;
   font-family: FreightBigProLightReg;
 }
 .image-div:hover .overlay {
   background: #0b0b0b;
 }
-.image-div:hover .overlay p {
+.image-div:hover .overlay h2 {
   opacity: 1;
 }
 .image-div:hover img {
@@ -373,9 +400,12 @@ i {
 }
 
 .pt2 a {
+  text-decoration: none;
+  color: #fff;
   font-family: helvetica;
   font-weight: 400;
   font-size: 1.2vw;
+  cursor: pointer;
 }
 
 .footer a {
