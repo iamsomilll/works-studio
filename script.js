@@ -37,6 +37,10 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
+document.querySelector(".footer .pt1 h4").addEventListener("click", ()=>{
+  scroll.scrollTo(0);
+})
+
 var elem = document.querySelectorAll(".elem")
 var page2 = document.querySelector("#page2")
 elem.forEach(function(ele){
