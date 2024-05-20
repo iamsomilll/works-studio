@@ -77,7 +77,7 @@ body {
 }
 
 #nav .right a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 1px;
@@ -135,7 +135,7 @@ body {
   padding: 0px 60px;
 }
 
-.bottom img{
+.bottom img {
   cursor: pointer;
 }
 
@@ -146,13 +146,13 @@ body {
   cursor: pointer;
 }
 
-#page1 .bottom a{
+#page1 .bottom a {
   text-decoration: none;
   position: relative;
 }
 
-#page1 .bottom a::after{
-  content: '';
+#page1 .bottom a::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 1px;
@@ -163,7 +163,7 @@ body {
   transition: all ease-in-out 0.2s;
 }
 
-#page1 .bottom a:hover::after{
+#page1 .bottom a:hover::after {
   transform: scaleX(1);
 }
 
@@ -201,7 +201,7 @@ body {
   font-weight: 100;
   position: relative;
   z-index: 9;
-  line-height: 5.5vw;
+  line-height: 4.5vw;
   transition: all ease-in-out 0.1s;
 }
 
@@ -290,7 +290,6 @@ body {
   height: 100%;
   z-index: 8;
 }
-
 
 #page3 {
   min-height: 100vh;
@@ -414,7 +413,7 @@ i {
 }
 
 .footer a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 1px;
@@ -429,4 +428,176 @@ i {
 .footer a:hover::after {
   visibility: visible;
   transform: scaleX(1);
+}
+
+@media (max-width: 1080px) {
+  #nav {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding: 64px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #nav .left svg{
+    transform: scale(3);
+  }
+  
+  #nav .right a {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  #nav a {
+    font-family: helvetica;
+    font-weight: 600;
+    font-size: 3vw;
+    cursor: pointer;
+  }
+  
+  .svg-icon {
+    filter: invert(100%);
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+  }
+  
+  #nav svg path {
+    fill: #000;
+  }
+  
+  #page1 h1 {
+    font-size: 10vw;
+    font-weight: 300;
+    line-height: 10vw;
+    letter-spacing: -2px;
+  }
+
+  .bottom {
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 30px;
+  }
+
+  .bottom a {
+    font-family: helvetica;
+    font-weight: 500;
+    font-size: 3vw;
+    cursor: pointer;
+  }
+
+  .bottom img{
+    transform: scale(1.5);
+  }
+
+  .elem h2 {
+    font-size: 13vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    z-index: 9;
+    line-height: 11vw;
+    transition: all ease-in-out 0.1s;
+  }
+
+  .image-container {
+    padding: 15px;
+  }
+  .image-div {
+    width: auto;
+    /* background-color: red; */
+    position: relative;
+    /* margin: 12px; */
+    overflow: hidden;
+  }
+  .image-div img {
+    height: 100%;
+    transition: all ease 0.5s;
+    width: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #0000001a;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2;
+    transition: all ease 0.5s;
+  }
+  .overlay h2 {
+    font-size: 3.5vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 2.8vw;
+    opacity: 0;
+    font-weight: 300;
+    transition: all ease 0.5s;
+    font-family: FreightBigProLightReg;
+  }
+
+  .footer {
+    height: 15vh;
+    width: 100%;
+  }
+
+  .footer .pt1 {
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  i {
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  
+  .pt1 h4 {
+    font-size: 3vw;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    font-family: poppins;
+    cursor: pointer;
+  }
+
+  .footer .pt2 {
+    height: 50%;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: relative;
+  }
+  
+  .right {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .pt2 a {
+    text-decoration: none;
+    color: #fff;
+    font-family: helvetica;
+    font-weight: 400;
+    font-size: 2vw;
+    cursor: pointer;
+  }
 }
